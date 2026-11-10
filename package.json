@@ -1,0 +1,55 @@
+{
+  "name": "dsh-safety-memory",
+  "version": "1.0.0",
+  "description": "Inject live-editable safety rules and a project-memory workflow into every DSH conversation.",
+  "author": "Eu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c505016310-maker/dsh-safety-memory.git"
+  },
+  "homepage": "https://github.com/c505016310-maker/dsh-safety-memory#readme",
+  "bugs": {
+    "url": "https://github.com/c505016310-maker/dsh-safety-memory/issues"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "defaults",
+    "assets",
+    "cordis.patch.yml",
+    "preview.mjs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "icon": "assets/icon.svg",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.3 <0.3.0-0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "safety",
+    "memory",
+    "prompt",
+    "workflow"
+  ],
+  "scripts": {
+    "test": "node test/unit.mjs",
+    "pack:release": "pnpm pack --pack-destination dist"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

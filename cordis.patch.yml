@@ -1,0 +1,19 @@
+# dsh-safety-memory bundle patch.
+# One row: the whole plugin. Later profile/home patches can address it by id
+# `dsh-safety-memory` and override any config field described in README.md.
+- insert:
+    - id: dsh-safety-memory
+      name: dsh-safety-memory
+      config:
+        enabled: true
+        injectRules: true
+        injectWorkflow: true
+        ruleOrder: 20
+        workflowOrder: 35
+        maxBytes: 65536
+        memoryFiles:
+          - README.md
+          - MEMO.md
+          - DECISIONS.md
+          - LOG.md
+        memoFile: MEMO.md

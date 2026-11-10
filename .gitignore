@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tgz
+.seen-sessions.json
+.DS_Store
+Thumbs.db
+
+# Local development memory: keep on disk, not in the public release repo.
+MEMO.md
+LOG.md
+DECISIONS.md
