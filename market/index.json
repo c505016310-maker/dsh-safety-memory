@@ -1,0 +1,37 @@
+{
+  "format": 1,
+  "title": "Eu's DSH plugins",
+  "description": "Plugins maintained by Eu for DeepSeek Harness.",
+  "plugins": [
+    {
+      "name": "dsh-safety-memory",
+      "title": {
+        "zh": "dsh-sm — 安全守则与项目记忆",
+        "en": "dsh-sm — Safety rules & project memory"
+      },
+      "description": {
+        "zh": "在每个 DSH 会话中注入可编辑的安全守则与项目记忆工作流；自动读取 MEMO.md、引导新项目建立记忆文件，把关键上下文落到磁盘。",
+        "en": "Injects live-editable safety rules and a project-memory workflow into every DSH conversation; auto-reads MEMO.md, bootstraps new projects, and keeps context on disk."
+      },
+      "author": "Eu",
+      "homepage": "https://github.com/c505016310-maker/dsh-safety-memory#readme",
+      "repository": {
+        "url": "https://github.com/c505016310-maker/dsh-safety-memory"
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794322570,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/c505016310-maker/dsh-safety-memory",
+            "commit": "148d355e701a3ebcaedde57ea1a109a170f637c2"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.3 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}
