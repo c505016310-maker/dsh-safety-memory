@@ -12,3 +12,6 @@ DECISIONS.md
 ENV.md
 RUNBOOK.md
 PITFALLS.md
+
+# Local backups
+*.bak-*
