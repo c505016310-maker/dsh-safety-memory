@@ -1,6 +1,6 @@
 {
   "name": "dsh-safety-memory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inject live-editable safety rules and a project-memory workflow into every DSH conversation.",
   "author": "Eu",
   "license": "MIT",

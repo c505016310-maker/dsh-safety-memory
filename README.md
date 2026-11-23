@@ -31,14 +31,14 @@ DSH 插件。它在每个模型请求的系统提示词里注入两段内容：
 打开 **设置 → 插件**，选择从文件/URL 安装，填入 Release 的 `.tgz` 地址：
 
 ```text
-https://github.com/c505016310-maker/dsh-safety-memory/releases/download/v1.0.0/dsh-safety-memory-1.0.0.tgz
+https://github.com/c505016310-maker/dsh-safety-memory/releases/download/v1.0.1/dsh-safety-memory-1.0.1.tgz
 ```
 
 ### 方式二：命令行
 
 ```sh
 dsh plugin --profile <你的profile> add \
-  https://github.com/c505016310-maker/dsh-safety-memory/releases/download/v1.0.0/dsh-safety-memory-1.0.0.tgz
+  https://github.com/c505016310-maker/dsh-safety-memory/releases/download/v1.0.1/dsh-safety-memory-1.0.1.tgz
 ```
 
 把 `<你的profile>` 换成实际 profile（如 `web`）。Desktop 使用的 profile 由 Desktop 管理，优先用方式一。
@@ -49,7 +49,7 @@ dsh plugin --profile <你的profile> add \
 git clone https://github.com/c505016310-maker/dsh-safety-memory.git
 cd dsh-safety-memory
 pnpm pack --pack-destination dist
-dsh plugin --profile <你的profile> add ./dist/dsh-safety-memory-1.0.0.tgz
+dsh plugin --profile <你的profile> add ./dist/dsh-safety-memory-1.0.1.tgz
 ```
 
 安装后重启 DSH，或在 profile 的 `cordis.patch.yml` 里保存一次改动触发重载。
