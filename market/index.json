@@ -20,6 +20,18 @@
       },
       "versions": [
         {
+          "version": "1.0.1",
+          "publishTimestamp": 1795447442,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/c505016310-maker/dsh-safety-memory",
+            "commit": "d9909727b42badef98cbfbc2f3c347fedd3574fa"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.3 <0.3.0-0"
+          }
+        },
+        {
           "version": "1.0.0",
           "publishTimestamp": 1794322570,
           "source": {
