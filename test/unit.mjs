@@ -74,7 +74,8 @@ ctx.emit('agent/created', { agent: { session: { id: 'session-test-1' } }, source
 workflow = sections[1].text(context);
 assert.match(workflow, /启动模式/);
 assert.match(workflow, /三个问题/);
-assert.match(workflow, /创建四个记忆文件/);
+assert.match(workflow, /至少创建/);
+assert.match(workflow, /ENV\.md/);
 
 // Create MEMO.md -> continuation mode.
 fs.writeFileSync(path.join(project, 'MEMO.md'), '# MEMO\n');
